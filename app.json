@@ -98,7 +98,7 @@
       "value": "https://telegra.ph/file/9f463e178dd4f98f92b2a.jpg",
       "required": false
     },
-    "BDRL_TEKS_KUSTOM": {
+    "Nada_TEKS_KUSTOM": {
       "description": "Kustom Pesan Alive Mu Untuk Perintah .bdrlalive (Isi Terserah)",
       "value": "I'am Using Nada-Userbot ✨",
       "required": false 

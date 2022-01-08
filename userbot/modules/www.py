@@ -28,7 +28,7 @@ pacar = [
     "**Iya Bang kenapa?**",
     "**Uuyy Bang**",
     "**Hadir uyy** 😁",
-    "**Saya Hadir Untuk Melindungi Cewe Dari Laki Laki Sangean** 😎",
+    "**Saya Hadir Untuk Melindungi Cewe Dari Laki Laki Sagapung** 😎",
 ]
 
 
@@ -84,7 +84,7 @@ async def redis(pong):
     await pong.edit(
         f"**{ALIVE_NAME}**        \n"
         f"**➾Kecepatan : ** '%sms'  \n"
-        f"**➾Branch : ** 'Bdrl-Userbot` \n" % (duration)
+        f"**➾Branch : ** 'Nada-Userbot` \n" % (duration)
     )
 
 
@@ -122,7 +122,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡️ʙᴅʀʟ-ᴜʙᴏᴛ⚡️**\n"
+        f"**⚡️ɴᴀᴅᴀ-ᴜʙᴏᴛ⚡️**\n"
         f"➾ __Signal__    __:__ "
         f"`%sms` \n"
         f"➾ __Uptime__ __:__ "
@@ -146,7 +146,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡️ ʙᴅʀʟ-ᴜʙᴏᴛ ⚡️**\n\n"
+        f"**⚡️ ɴᴀᴅᴀ-ᴜʙᴏᴛ ⚡️**\n\n"
         f"** ▹  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ▹  Uᴘᴛɪᴍᴇ  :** "
@@ -202,7 +202,7 @@ async def speedtst(spd):
         f"`{result['ping']}` \n"
         "✧ **ISP:** "
         f"`{result['client']['isp']}` \n"
-        "✧ **BOT:** ⚡️ʙᴅʀʟ-ᴜsᴇʀʙᴏᴛ⚡️"
+        "✧ **BOT:** ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️"
     )
 
 
@@ -229,7 +229,7 @@ async def pingme(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit(f"**⚡️BdrlName : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
+    await pong.edit(f"**⚡️NadaName : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
 
 
 @register(outgoing=True, pattern="^.pink$")
@@ -259,7 +259,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**BABI!! **\n**NGENTOT** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+        f"**SANGE!! **\n**PENGEN NGENTOT** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
     )
 
 

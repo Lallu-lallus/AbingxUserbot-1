@@ -45,7 +45,7 @@ async def _(event):
         "telethon.network.mtprotosender -\nINFO - Received response without parent request",
         "INFO - Bdrl-userbot: Logged in as 557667062",
         "INFO - Bdrl-userbot: Successfully...",
-        "919852+00:00 app[worker.1]: 919 - Bdrl-userbot -",
+        "919852+00:00 app[worker.1]: 919 - Nada-Userbot -",
         "INFO -  ⚡️Nada-Userbot⚡️  ⚙️ V5.0 [TELAH DIAKTIFKAN!]",
         "**Build Succeeded**"
 

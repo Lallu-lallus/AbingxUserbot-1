@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">Nada-Ubot<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">Nada-Userbot<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
 
 <p align="center">
     <a href="https://github.com/ReyyNada/Nada-Userbot"><img src="https://img.shields.io/github/last-commit/Yansaii/Bdrl-userbot?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>

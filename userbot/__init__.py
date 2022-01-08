@@ -382,7 +382,7 @@ with bot:
 
 
 async def check_aliv
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Nada-Userbot Berhasil Diaktifkan✨**\n━━━━━━━━━━━━━━━━━━━\n❃ **ʙᴏᴛ ᴏꜰ :** {ALIVE_NAME}\n❃ **ʙᴏᴛ ᴠᴇʀ :** 7.0\n━━━━━━━━━━━━━━━━━━━\n❃ **ᴏᴡɴ​ :** @SangDappaa\n❃ **ᴄʜᴀɴɴᴇʟ​ :** @stay_hallal\n━━━━━━━━━━━━━━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Nada-Userbot Berhasil Diaktifkan✨**\n━━━━━━━━━━━━━━━━━━━\n❃ **ʙᴏᴛ ᴏꜰ :** {ALIVE_NAME}\n❃ **ʙᴏᴛ ᴠᴇʀ :** 7.0\n━━━━━━━━━━━━━━━━━━━\n❃ **​sᴜᴘᴘᴏʀᴛ :** @bdrlsupportt\n❃ **ᴄʜᴀɴɴᴇʟ​ :** @stay_hallal\n━━━━━━━━━━━━━━━━━━━")
     return
 
 

@@ -33,9 +33,9 @@ async def help(event):
         for i in CMD_HELP:
             string += "`" + str(i)
             string += "`\t ✗  "
-        await event.edit("**🔥ʙᴅʀʟ-υѕєявσт🔥**\n\n"
+        await event.edit("**🔥ɴᴀᴅᴀ-υѕєʀвσт🔥**\n\n"
                          f"**◉ Bᴏᴛ ᴏꜰ {DEFAULTUSER}**\n**◉ Mᴏᴅᴜʟᴇꜱ : {len(modules)}**\n\n"
                          "**• Mᴀɪɴ Mᴇɴᴜ :**\n"
-                         f"◉ {string}◉\n\n✐ **ɴᴏᴛᴇꜱ :**  `.help animasi`\n☞  sᴜᴘᴘᴏʀᴛ : @bdrlsupportt")
+                         f"◉ {string}◉\n\n✐ **ɴᴏᴛᴇꜱ :**  `.help animasi`\n☞  ᴏᴡɴ : @SangDappaa")
         await asyncio.sleep(1000)
         await event.delete()

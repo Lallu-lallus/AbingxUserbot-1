@@ -67,7 +67,7 @@ if CONFIG_CHECK:
 # KALO NGEFORK ID DEVS NYA GA USAH DI HAPUS YA GOBLOK 😡
 DEVS = (
     1808866220,
-    1808866220,
+    1675900974,
     1808866220,
     1808866220,
     1808866220,
@@ -120,7 +120,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/muhammadrizky16/Kyy-Userbot")
+    "https://github.com/ReyyNada/Nada-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "Kyy-Userbot")
 

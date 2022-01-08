@@ -227,10 +227,6 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 # Sticker Custom Pack Name
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
-# Default .alive Logo
-ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/923906c66e7c98ac7e537.jpg"
-
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
     "INLINE_PIC") or "https://telegra.ph/file/923906c66e7c98ac7e537.jpg"

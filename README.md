@@ -1,8 +1,8 @@
-<h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">𝗕𝗗𝗥𝗟-𝗨𝗕𝗢𝗧<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">Nada-Ubot<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
 
 <p align="center">
-    <a href="https://github.com/Yansaii/Bdrl-userbot/commits/Bdrl-userbot"><img src="https://img.shields.io/github/last-commit/Yansaii/Bdrl-userbot?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>
-    <a href="https://github.com/Yansai/Bdrl-userbot"> <img src="https://img.shields.io/github/repo-size/Yansaii/Bdrl-userbot?logo=github&style=for-the-badge" /></a>
+    <a href="https://github.com/ReyyNada/Nada-Userbot"><img src="https://img.shields.io/github/last-commit/Yansaii/Bdrl-userbot?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>
+    <a href="https://github.com/ReyyNada/Nada-Userbot"> <img src="https://img.shields.io/github/repo-size/Yansaii/Bdrl-userbot?logo=github&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"><img src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=brightgreen&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.6-purple?style=for-the-badge&logo=appveyor"/>
     </p>
@@ -28,7 +28,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
 ## Heroku Deployment
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yansaii/Bdrl-userbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ReyyNada/Nada-Userbot)
 
 
 ### Support & Updates 

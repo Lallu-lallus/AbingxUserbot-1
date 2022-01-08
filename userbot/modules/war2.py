@@ -45,7 +45,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern=r"^\.gcs(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**GC SAMPAH KAYA GINI, BUBARIN AJA GOBLOK!!**"
+    await typew.edit("**GC SAMPAH KEKK GINI BUBARIN AJA GOBLOK. GAGUNA GC LU DI DUNIA PERTELEAN. UDAH OWN NYA KEK JAMET. APALAGI STAFF NYA. DIHH JIJIK ANJING!!**"
                      )
 
 

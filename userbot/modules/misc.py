@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/Yansaii/Bdrl-userbot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/ReyyNada/Nada-Userbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡️ ʙᴅʀʟ-Userbot Repo](https://github.com/Yansaii/Bdrl-userbot/blob/Bdrl-userbot/README.md)"
+        "\n[⚡️ ɴᴀᴅᴀ-Userbot Repo](https://github.com/ReyyNada/Nada-Userbot/blob/Nada-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -110,14 +110,12 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**Hey**, I am using **⚡️ʙᴅʀʟ-ᴜsᴇʀʙᴏᴛ⚡️** \n"
-        "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
-        "➣ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/Yansaii/Bdrl-userbot)\n"
-        "➣ **Owner Bot       :** [ʙᴅʀʟ](t.me/Bdrllll)\n"
-        "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
+        "**Hey**, I am using **⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️** \n"
+        "➣ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/ReyyNada/Nada-Userbot)\n"
+        "➣ **Owner Bot       :** [ᴀɴᴀᴋ ᴛᴜʜᴀɴ](t.me/SangDappaa)\n"
         "➣ **Support           :** [sᴜᴘᴘᴏʀᴛ](https://t.me/bdrlsupportt)\n"
-        "➣ **Channel           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/gabuuttty)\n"
-        "卍━━━━━━━━━━━━━━━━━━━━━━卍\n"
+        "➣ **Channel           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/stay_hallal)\n"
+       
     )
 
 

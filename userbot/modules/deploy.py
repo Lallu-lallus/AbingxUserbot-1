@@ -46,7 +46,7 @@ async def _(event):
         "INFO - Bdrl-userbot: Logged in as 557667062",
         "INFO - Bdrl-userbot: Successfully...",
         "919852+00:00 app[worker.1]: 919 - Bdrl-userbot -",
-        "INFO -  ⚡️Bdrl-Userbot⚡️  ⚙️ V5.0 [TELAH DIAKTIFKAN!]",
+        "INFO -  ⚡️Nada-Userbot⚡️  ⚙️ V5.0 [TELAH DIAKTIFKAN!]",
         "**Build Succeeded**"
 
     ]

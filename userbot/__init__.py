@@ -661,7 +661,7 @@ with bot:
                     f"°__Menampilkan Alive Punya Kamu__.\n\n"
                     f"× `.set var ALIVE_LOGO` [**LINK**]\n"
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
-                    f"× `.set var BDRL_TEKS_KUSTOM` [**TEKS**]\n"
+                    f"× `.set var NADA_TEKS_KUSTOM` [**TEKS**]\n"
                     f"°__Mengganti Teks Yang Ada Command dappaAlive__.\n\n"
                     f"© @SangDappa")
                 await event.edit(

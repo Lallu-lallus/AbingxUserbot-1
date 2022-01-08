@@ -192,7 +192,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
-# Untuk Perintah .bdrlalive
+# Untuk Perintah .nadaalive
 KYY_TEKS_KUSTOM = os.environ.get("Nada_TEKS_KUSTOM", "")
 
 # Untuk Mengubah Pesan Welcome

@@ -1,9 +1,9 @@
 # Using Python Slim-Buster
 FROM vckyouuu/geezprojects:buster
 #━━━━━ Userbot Telegram ━━━━━
-#━━━━━ By Nada-Userbot ━━━━━
+#━━━━━ By Dragon-Userbot ━━━━━
 
-RUN git clone -b Kyy-Userbot https://github.com/ReyyNada/Nada-Userbot /root/userbot
+RUN git clone -b Kyy-Userbot https://github.com/Kenzuuu/Dragon-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot

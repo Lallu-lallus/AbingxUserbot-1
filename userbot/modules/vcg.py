@@ -3,8 +3,8 @@
 
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
-from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
-from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc
+from telethon.tl.functions.phone import CreateGroupCallRequest as startvcs
+from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvcs
 from telethon.tl.functions.phone import GetGroupCallRequest as getvc
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
@@ -25,7 +25,7 @@ def user_list(l, n):
         yield l[i: i + n]
 
 
-@register(outgoing=True, pattern=r"^\.startvc$")
+@register(outgoing=True, pattern=r"^\.startvcs$")
 async def start_voice(c):
     chat = await c.get_chat()
     admin = chat.admin_rights
@@ -35,13 +35,13 @@ async def start_voice(c):
         await c.edit(f"**Maaf {ALIVE_NAME} Bukan Admin 👮**")
         return
     try:
-        await c.client(startvc(c.chat_id))
-        await c.edit("`Memulai Obrolan Suara`")
+        await c.client(startvcs(c.chat_id))
+        await c.edit("`🔐 Dragon Open Vcs Ges Naik Naik Yok`")
     except Exception as ex:
         await c.edit(f"**ERROR:** `{ex}`")
 
 
-@register(outgoing=True, pattern=r"^\.stopvc$")
+@register(outgoing=True, pattern=r"^\.stopvcs$")
 async def stop_voice(c):
     chat = await c.get_chat()
     admin = chat.admin_rights
@@ -52,7 +52,7 @@ async def stop_voice(c):
         return
     try:
         await c.client(stopvc(await get_call(c)))
-        await c.edit("`Mematikan Obrolan Suara`")
+        await c.edit("`🔐 Dragon Telah selesai Vcs Ges ✌️`")
     except Exception as ex:
         await c.edit(f"**ERROR:** `{ex}`")
 

@@ -10,7 +10,7 @@
     "productivity"
   ],
   "repository": "https://github.com/kenzuuu/Dragon-Userbot",
-  "telegram": "https://t.me/SangDappaa",
+  "telegram": "https://t.me/triplenineee",
   "success_url": "https://t.me/narumisupport",
   "stack": "container",
   "env": {
@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @SangDappaa di telegram",
+      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @triplenineee di telegram",
       "required": true
     },
     "HEROKU_APP_NAME": {

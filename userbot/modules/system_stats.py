@@ -164,9 +164,9 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️ Versi:** \n "
-            f"heads/ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ-0-x634i7u1"
-            "\n**⚜-**Revisi:**\n "
+            "🔐 **Bot Name :** `DRAGON-USERBOT` \n "
+            f"🔐 **Bot Versi :** `BLACK DRAGON`\n "
+            f"🔐 **Revisi:** DU.01.00 \n "
             f"{revout}"
         )
     else:
@@ -303,20 +303,20 @@ async def redis(alive):
     await alive.edit("__Sedang Memuat...__")
     await alive.edit("__Sedang Memuat..__")
     await alive.edit("__Sedang Memuat...__")
-    await alive.edit("✨")
+    await alive.edit("☠️")
     await asyncio.sleep(2)
     output = (
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"┣  `Name     :` {DEFAULTUSER} \n"
-        f"┣  `Username :` @{user.username} \n"
+        f"┣  `Username :` {user.username} \n"
         f"┣  `Telethon :` Ver {version.__version__} \n"
         f"┣  `Python   :` Ver {python_version()} \n"
-        f"┣  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
+        f"┣  `Branch   :` **[MAIN](https://t.me/triplenineee)** \n"
         f"┣  `Bot Ver  :` {BOT_VER} \n"
         f"┣  `Modules  :` {len(modules)} Modules \n"
-        f"┣  `GitHub   :` [ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ](https://github.com/ReyyNada/Nada-Userbot) \n"
-        f"┣  `Support  :` [Groups](https://t.me/bdrlsupportt) \n"
-        f"┣  `Owner    :` [ᴀɴᴀᴋ ᴛᴜʜᴀɴ](https://t.me/SangDappaa) \n"
+        f"┣  `GitHub   :` **[MAIN](https://www.xxxnxxx.com)** \n"
+        f"┣  `Support  :` **[GROUP](https://t.me/narumisupport)** \n"
+        f"┣  `Owner    :` **[DRAGON](https://t.me/triplenineee)** \n"
         f"┗━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:

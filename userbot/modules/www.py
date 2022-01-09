@@ -64,7 +64,7 @@ async def _(kyy):
     await kyy.reply(random.choice(absen))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^.bdrl$")
+@register(incoming=True, from_users=DEVS, pattern=r"^.dragon$")
 async def _(kyy):
     await kyy.reply(random.choice(pacar))
 
@@ -78,13 +78,13 @@ async def redis(pong):
     await pong.edit("**✲✲**")
     await pong.edit("**✲✲✲**")
     await pong.edit("__DUAR__")
-    await pong.edit("🔥")
+    await pong.edit("☠️")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**{ALIVE_NAME}**        \n"
-        f"**➾Kecepatan : ** '%sms'  \n"
-        f"**➾Branch : ** 'Nada-Userbot` \n" % (duration)
+        f"**🔐 Kecepatan : ** '%sms'  \n"
+        f"**🔐 Bot Name : ** `Dragon-Userbot` \n" % (duration)
     )
 
 
@@ -122,7 +122,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡️ɴᴀᴅᴀ-ᴜʙᴏᴛ⚡️**\n"
+        f"**🔐 Dragon-Userbot**\n"
         f"➾ __Signal__    __:__ "
         f"`%sms` \n"
         f"➾ __Uptime__ __:__ "
@@ -146,7 +146,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡️ ɴᴀᴅᴀ-ᴜʙᴏᴛ ⚡️**\n\n"
+        f"**🔐 Dragon-Userbot**\n\n"
         f"** ▹  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ▹  Uᴘᴛɪᴍᴇ  :** "
@@ -164,12 +164,12 @@ async def pingme(pong):
     await pong.edit("**✣✣**")
     await pong.edit("**✣✣✣**")
     await pong.edit("**✣✣✣✣**")
-    await pong.edit("⚡️")
+    await pong.edit("☠️")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f" **PINGTOD🏓** \n"
-        f"⚡️ **ᴘɪɴɢᴇʀ :** "
+        f" **PING🏓** \n"
+        f"☠️ **ᴘɪɴɢᴇʀ :** "
         f"`%sms` \n"
         f"✲ **ᴜᴘᴛɪᴍᴇ :** "
         f"`{uptime}` \n"
@@ -202,7 +202,7 @@ async def speedtst(spd):
         f"`{result['ping']}` \n"
         "✧ **ISP:** "
         f"`{result['client']['isp']}` \n"
-        "✧ **BOT:** ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️"
+        "✧ **BOT:** 🔐 Dragon-Userbot"
     )
 
 
@@ -225,11 +225,11 @@ async def pingme(pong):
     start = datetime.now()
     await pong.edit("**◕‿- PONG!!🏓**")
     await asyncio.sleep(1)
-    await pong.edit("✨")
+    await pong.edit("☠️")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit(f"**⚡️NadaName : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
+    await pong.edit(f"**🔐 Dragon : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
 
 
 @register(outgoing=True, pattern="^.pink$")

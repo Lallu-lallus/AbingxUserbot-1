@@ -57,7 +57,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 "`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `"
-                " untuk dapat deploy perubahan terbaru dari ⚡️ ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️.`"
+                " untuk dapat deploy perubahan terbaru dari 🔐 Dragon-Userbot.`"
             )
             repo.__del__()
             return
@@ -67,11 +67,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Bdrl-Project dyno.`"
+                f"{txt}\n`Kredensial Heroku tidak valid untuk deploy Black-Dragon dyno.`"
             )
             return repo.__del__()
         await event.edit(
-            "`Heroku :` `Sedang MengUpdate`" "\n`Mohon Menunggu 5-7 Menit`"
+            "🔐 `DRAGON-USERBOT :` `Sedang MengUpdate`" "\n`Mohon Menunggu 5-7 Menit`"
         )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -97,14 +97,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return await event.delete()
         else:
             await event.edit(
-                "`Nada-Userbot Berhasil DiUpdate,Restart Tunggu Sebentar`"
+                "🔐 `Dragon-Userbot Berhasil DiUpdate,Restart Tunggu Sebentar`"
             )
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID, "#BOT \n" "`Nada-Userbot Berhasil Di Update`"
+                BOTLOG_CHATID, "#BOT \n" "`🔐 Dragon-Userbot Berhasil Di Update`"
             )
 
     else:
@@ -122,9 +122,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit("**⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️** `Berhasil Di Update!`")
+    await event.edit("**🔐DRAGON-USERBOT** `Berhasil Di Update!`")
     await asyncio.sleep(1)
-    await event.edit("**⚡️ ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️** `Di Restart....`")
+    await event.edit("**🔐 DRAGON-USERBOT** `Di Restart....`")
     await asyncio.sleep(1)
     await event.edit("`Mohon Menunggu Beberapa Detik.`")
     await asyncio.sleep(10)
@@ -132,7 +132,7 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**⚡️ ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️ Telah Di Perbarui.**"
+            BOTLOG_CHATID, "#BOT \n" "**🔐 Dragon-Userbot Telah Di Perbarui.**"
         )
         await asyncio.sleep(100)
         await event.delete()
@@ -146,7 +146,7 @@ async def update(event, repo, ups_rem, ac_br):
 @register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("**Mengecek Pembaruan, Silakan Menunggu....**")
+    await event.edit("**🔐 Mengecek Pembaruan, Silakan Menunggu....**")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
@@ -196,7 +196,8 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await event.edit(
-            f"\n⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️ Sudah Versi Terbaru || Tunggu Update Terbaru\n"
+            f"\n🔐 Dragon-Userbot : \n"
+            f"Is Up to Date by : **[MAIN](https://t.me/triplenineee)** \n "
         )
         await asyncio.sleep(15)
         await event.delete()
@@ -204,7 +205,7 @@ async def upstream(event):
 
     if conf is None and force_update is False:
         changelog_str = (
-            f"**Pembaruan Untuk ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️ :\n\n⚒️ Pembaruan Data :**\n`{changelog}`"
+            f"🔐 `Dragon-Userbot Update` \n"
         )
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
@@ -220,7 +221,7 @@ async def upstream(event):
         else:
             await event.edit(changelog_str)
         return await event.respond(
-            "**Perintah Untuk Update, Sebagai Berikut.**\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now` (Sementara)\n🔰 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy` (Permanen)\n\n__Untuk Meng Update Fitur Terbaru Dari ✨ɴᴀᴅᴀ-υѕєявσт✨.__"
+            "🔐 `Update By` :  **[MAIN](https://t.me/triplenineee)** "
         )
 
     if force_update:
@@ -228,13 +229,12 @@ async def upstream(event):
             "`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`"
         )
     else:
-        await event.edit("` Proses Update ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️, Loading....1%`")
-        await event.edit("` Proses Update ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️, Loading....20%`")
-        await event.edit("` Proses Update ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️, Loading....35%`")
-        await event.edit("` Proses Update ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️, Loading....77%`")
-        await event.edit("` Proses Update ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️, Updating...90%`")
-        await event.edit(
-            "` Proses Update ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️, Mohon Tunggu Sebentar....100%`"
+        await event.edit("` 🔐 Dragon-Userbot , Loading....1%`")
+        await event.edit("` 🔐 Dragon-Userbot , Loading....20%`")
+        await event.edit("` 🔐 Dragon-Userbot , Loading....35%`")
+        await event.edit("` 🔐 Dragon-Userbot , Loading....77%`")
+        await event.edit("` 🔐 Dragon-Userbot , Updating...90%`")
+        await event.edit("` 🔐 Dragon-Userbot , Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":

@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/extras/GeezFire.gif" width="35px">Nada-Userbot<img src="./resources/extras/GeezFire.gif" width="35px"></h1>
+<h1 align="center">DRAGON-USERBOT</h1>
 
 <p align="center">
     <a href="https://github.com/ReyyNada/Nada-Userbot"><img src="https://img.shields.io/github/last-commit/ReyyNada/Nada-Userbot?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>
@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/923906c66e7c98ac7e537.jpg">
+  <img src="https://telegra.ph/file/3e6ad3242d79d7f088e7d.jpg">
 </p>
 
 
@@ -28,16 +28,12 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
 ## Heroku Deployment
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ReyyNada/Nada-Userbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Kenzuuu/Dragon-userbot)
 
 
 ### Support & Updates 
-<a href="https://t.me/bdrlsupportt"><img src="https://img.shields.io/badge/Join-Group%20Support-red.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/gabuuttty"><img src="https://img.shields.io/badge/Join-Updates%20Channel-white.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/narumisupport"><img src="https://img.shields.io/badge/Join-Group%20Support-red.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/inibotsaya"><img src="https://img.shields.io/badge/Join-Updates%20Channel-white.svg?style=for-the-badge&logo=Telegram"></a>
 
-### Follow Me :
-<p align="left">
-<a href="https://github.com/ReyyNada"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a> <a href="https://instagram.com/kechili.8_"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
-</p>
 
 ##
 
@@ -46,4 +42,5 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 *   [Sendi](https://github.com/SendiAp/Rose-Userbot)   Rose-Userbot
 *   [Skyzu](https://github.com/Skyzu/skyzu-userbot)   skyzu-userbot
 *   [Pocong](https://github.com/poocong/PocongUserbot) PocongUserbot
+*   [Kenzu](https://github.com/kenzuuu/Dragon-userbot) Dragon-Userbot
 *   DAN TERIMAKASIH KEPADA USERBOT LAINNYA

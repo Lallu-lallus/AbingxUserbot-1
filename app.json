@@ -1,7 +1,7 @@
 {
-  "name": "Nada-Userbot",
-  "description": "NADA-USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/923906c66e7c98ac7e537.jpg",
+  "name": "Dragon-Userbot",
+  "description": "DRAGON-USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "logo": "https://telegra.ph/file/3e6ad3242d79d7f088e7d.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ReyyNada/Nada-Userbot",
+  "repository": "https://github.com/kenzuuu/Dragon-Userbot",
   "telegram": "https://t.me/SangDappaa",
-  "success_url": "https://t.me/bdrlsupportt",
+  "success_url": "https://t.me/narumisupport",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -86,7 +86,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "✨Nada-Userbot✨",
+      "value": "🔐 Dragon-Userbot",
       "required": false
     },
     "ALIVE_NAME": {
@@ -95,12 +95,12 @@
     },
      "ALIVE_LOGO": {
       "description": "Gambar dalam module .alive",
-      "value": "https://telegra.ph/file/923906c66e7c98ac7e537.jpg",
+      "value": "https://telegra.ph/file/e0fe38bc2cf338770343c.jpg",
       "required": false
     },
     "Nada_TEKS_KUSTOM": {
       "description": "Kustom Pesan Alive Mu Untuk Perintah .bdrlalive (Isi Terserah)",
-      "value": "I'am Using Nada-Userbot ✨",
+      "value": "🔐 I'am Using Dragon-Userbot ",
       "required": false 
     },
     "S_PACK_NAME": {

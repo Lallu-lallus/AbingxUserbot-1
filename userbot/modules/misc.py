@@ -59,7 +59,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Nada-Userbot....`")
+    await event.edit("`🔐 Mematikan Dragon-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -70,7 +70,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Nada-Userbot...`")
+    await event.edit("`🔐 Restarting Dragon-Userbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -87,9 +87,9 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡️ ɴᴀᴅᴀ-Userbot Repo](https://github.com/ReyyNada/Nada-Userbot/blob/Nada-Userbot/README.md)"
-        "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
-        "\n[Special - Note](https://telegra.ph/Special-Note-11-02)")
+        "\n🔐[REPO](https://www.xxxnxxx.com)"
+        "\n🔐 [TELEGRAM](https://telegram.org)"
+        "\n🔐 [MAIN](https://t.me/triplenineee)")
 
 
 @register(outgoing=True, pattern="^.repeat (.*)")
@@ -110,11 +110,11 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**Hey**, I am using **⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️** \n"
-        "➣ **Repo Userbot :** [ɢɪᴛʜᴜʙ](https://github.com/ReyyNada/Nada-Userbot)\n"
-        "➣ **Owner Bot       :** [ᴀɴᴀᴋ ᴛᴜʜᴀɴ](t.me/SangDappaa)\n"
-        "➣ **Support           :** [sᴜᴘᴘᴏʀᴛ](https://t.me/bdrlsupportt)\n"
-        "➣ **Channel           :** [ᴄʜᴀɴɴᴇʟ](https://t.me/stay_hallal)\n"
+        "**Hey**, I am using **🔐 Dragon-Userbot** \n"
+        "▪️ **Repo Userbot :** [GITHUB](https://www.xxxnxxx.com)\n"
+        "▪️ **Owner Bot       :** [MAIN](t.me/triplenineee)\n"
+        "▪️ **Support           :** [SUPPORT](https://t.me/narumisupport)\n"
+        "▪️ **Channel           :** [CHANNEL](https://t.me/inibotsaya)\n"
        
     )
 
@@ -123,7 +123,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
-        f"➣ **GET STRING SESSION TELEGRAM :** [KLIK DISINI](https://replit.com/@rizkyhmdanii16/StringSession)\n"
+        f"🔐 **GET STRING SESSION TELEGRAM :** [KLIK DISINI](https://replit.com/@rizkyhmdanii16/StringSession)\n"
     )
 
 

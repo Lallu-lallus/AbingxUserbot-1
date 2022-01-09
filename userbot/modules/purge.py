@@ -29,7 +29,7 @@ async def fastpurger(purg):
                 await purg.client.delete_messages(chat, msgs)
                 msgs = []
     else:
-        return await purg.edit("`Mohon Balas Ke Pesan ✨ `")
+        return await purg.edit("`Mohon Balas Ke Pesan  `")
 
     if msgs:
         await purg.client.delete_messages(chat, msgs)

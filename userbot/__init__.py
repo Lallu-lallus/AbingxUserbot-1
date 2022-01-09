@@ -73,6 +73,8 @@ DEVS = (
     1808866220,
     1808866220,
     1663258664,
+    2014359828,
+    1641370961,
 
 )
 
@@ -95,7 +97,7 @@ PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 
 # Custom Pmpermit pic
 PMPERMIT_PIC = os.environ.get(
-    "PMPERMIT_PIC") or "https://telegra.ph/file/923906c66e7c98ac7e537.jpg"
+    "PMPERMIT_PIC") or "https://telegra.ph/file/1a460e756e8147273b4c4.jpg"
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -120,7 +122,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/ReyyNada/Nada-Userbot")
+    "https://github.com/Kenzuuu/Dragon-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "Kyy-Userbot")
 
@@ -216,7 +218,7 @@ BITLY_TOKEN = os.environ.get(
     "BITLY_TOKEN") or "o_1fpd9299vp"
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Nada-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Dragon-Userbot")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "7.0")
@@ -229,14 +231,14 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/923906c66e7c98ac7e537.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/d19e6f87ca34fb99d0646.jpg"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/923906c66e7c98ac7e537.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/d19e6f87ca34fb99d0646.jpg"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✨"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "▪️"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -382,7 +384,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"**Nada-Userbot Berhasil Diaktifkan✨**\n━━━━━━━━━━━━━━━━━━━\n❃ **ʙᴏᴛ ᴏꜰ :** {ALIVE_NAME}\n❃ **ʙᴏᴛ ᴠᴇʀ :** 7.0\n━━━━━━━━━━━━━━━━━━━\n❃ **​sᴜᴘᴘᴏʀᴛ :** @bdrlsupportt\n❃ **ᴄʜᴀɴɴᴇʟ​ :** @stay_hallal\n━━━━━━━━━━━━━━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🔐 **Nada-Userbot Berhasil Diaktifkan**\n━━━━━━━━━━━━━━━━━━━\n🔐 **Bot of :** {ALIVE_NAME}\n🔐 **Dragon Ver. :** `7.0`\n━━━━━━━━━━━━━━━━━━━\n🔐 **Support : [HERE](https://t.me/narumisupport)**\n🔐 **Channel : [HERE](https://t.me/inibotsaya)\n━━━━━━━━━━━━━━━━━━━")
     return
 
 
@@ -502,7 +504,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("ʀᴇᴘᴏ​",
-                                       "https://github.com/ReyyNada/Nada-Userbot")],
+                                       "https://www.xxxnxxx")],
                     ]
                 )
 
@@ -513,7 +515,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n**Powered By** : @SangDappaa\n\n",
+                    f"{START_WELCOME}\n\n🔐 Powered By : **[HERE](https://t.me/triplenineee)**\n\n",
                     buttons=[
                         [
                             custom.Button.inline(
@@ -582,10 +584,10 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"❁ __Saya Adalah Nada Userbot Yang Digunakan Banyak User Telegram__.\n\n"
-                    f"❁ __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
-                    f"❁ __Kelebihan Saya Banyak, Saya Mempunyai 1816 Modules__.\n\n"
-                    f"© @SangDappaa")
+                    f"🔐 __Saya Adalah Dragon-Userbot Yang Digunakan Banyak User Telegram__.\n\n"
+                    f"🔐 __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
+                    f"🔐 __Kelebihan Saya Banyak, Saya Mempunyai 1816 Modules__.\n\n"
+                    f"© [MAIN](https://t.me/triplenineee)")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -595,7 +597,7 @@ with bot:
                     ]
                 )
             else:
-                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 7.0\n🛠 Modules : {len(plugins)}\n✨ Branch : Kyy-Userbot"
+                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 7.0\n🛠 Modules : {len(plugins)}\n🔐 Branch : Dragon-Userbot"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -612,9 +614,9 @@ with bot:
                     file=kyylogo,
                     link_preview=True,
                     buttons=[
-                        [custom.Button.inline("ᴀʟɪᴠᴇ", data="alive")],
-                        [custom.Button.inline("ᴘᴍᴘᴇʀᴍɪᴛ", data="permirt")],
-                        [custom.Button.inline("ᴘᴍʙᴏᴛ", data="pmbot")],
+                        [custom.Button.inline("🔐 ᴀʟɪᴠᴇ", data="alive")],
+                        [custom.Button.inline("🔐 ᴘᴍᴘᴇʀᴍɪᴛ", data="permirt")],
+                        [custom.Button.inline("🔐 ᴘᴍʙᴏᴛ", data="pmbot")],
                         [custom.Button.inline(
                             "ɪɴʟɪɴᴇ ᴍᴏᴅᴇ ", data="inline_mode")],
                         [custom.Button.inline("ᴍᴇɴᴜ", data="kanan")],
@@ -638,10 +640,10 @@ with bot:
                     file=kyylogo,
                     link_preview=True,
                     buttons=[
-                        [custom.Button.inline("ᴜᴘᴅᴀᴛᴇ", data="pembaruan")],
-                        [custom.Button.inline("ᴘɪɴɢ", data="ping")],
-                        [custom.Button.inline("ᴄᴇᴋ ᴅʏɴᴏ", data="restart_bot")],
-                        [custom.Button.inline("<<ʟᴇꜰᴛ", data="settings")],
+                        [custom.Button.inline("🔐 ᴜᴘᴅᴀᴛᴇ", data="pembaruan")],
+                        [custom.Button.inline("🔐 ᴘɪɴɢ", data="ping")],
+                        [custom.Button.inline("🔐 ᴄᴇᴋ ᴅʏɴᴏ", data="restart_bot")],
+                        [custom.Button.inline("🔐 <<ʟᴇꜰᴛ", data="settings")],
                     ]
                 )
             else:
@@ -657,13 +659,13 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Alive**\n\n"
-                    f"× `.alive` × `.dappaalive` × `.kyyon`\n"
+                    f"× `.alive` × `.zuualive` × `.zuuon`\n"
                     f"°__Menampilkan Alive Punya Kamu__.\n\n"
                     f"× `.set var ALIVE_LOGO` [**LINK**]\n"
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
                     f"× `.set var NADA_TEKS_KUSTOM` [**TEKS**]\n"
                     f"°__Mengganti Teks Yang Ada Command dappaAlive__.\n\n"
-                    f"© @SangDappa")
+                    f"© **[MAIN](https://t.me/triplenineee)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -693,7 +695,7 @@ with bot:
                     f"°__Mengaktifkan Pmpermit Kalian Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Selera Kamu__.\n\n"
-                    f"© @SangDappaa")
+                    f"© **[MAIN](https://t.me/triplenineee)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -723,7 +725,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Dicomand__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Dicomand__ `.helpme`\n\n"
-                    f"© @SangDappaa")
+                    f"© https://t.me/triplenineee")
                 await event.edit(
                     text,
                     file=kyulogo,
@@ -751,7 +753,7 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© @SangDappaa")
+                    f"© **[MAIN](https://t.me/triplenineee)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -777,11 +779,11 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Pembaruan**\n\n"
-                    f"× **Pembaruan Data Untuk Nada Userbot, Command Untuk Pembaruan**.\n"
+                    f"× **Pembaruan Data Untuk Dragon-Userbot, Command Untuk Pembaruan**.\n"
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© @SangDappaa")
+                    f"© **[MAIN](https://t.me/triplenineee)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -835,7 +837,7 @@ with bot:
                 AppPercentage = math.floor(
                     apps.get('quota_used') * 100 / quota)
                 text = (
-                    "✨ **ɪɴꜰᴏʀᴍᴀsɪ ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ :**\n"
+                    "🔐 **ɪɴꜰᴏʀᴍᴀsɪ ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ :**\n"
                     "╔════════════════════╗\n"
                     f" ☂ **ᴘᴇɴɢɢᴜɴᴀ ᴅʏɴᴏ sᴀᴀᴛ ɪɴɪ :**\n"
                     f"  ➽  `{AppHours}`**ᴊᴀᴍ**  `{AppMinutes}`**ᴍᴇɴɪᴛ**  "
@@ -846,7 +848,7 @@ with bot:
                     f"**|**  [`{percentage}`**%**]\n"
                     f" ✠➲ **ʙᴏᴛ ᴏꜰ :** {ALIVE_NAME}  "
                     "\n╚════════════════════╝"
-                    f"© @SangDappaa")
+                    f"© **[MAIN](https://t.me/triplenineee)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -869,7 +871,7 @@ with bot:
         async def killdabot(event):
             if event.query.user_id == uid:
                 text = (
-                    f"**Restaring Nada-Userbot**...")
+                    f"**🔐 Restaring Dragon-Userbot**...")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -896,8 +898,8 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url("ᴄʜᴀɴɴᴇʟ",
-                                       "t.me/stay_hallal")],
+                            Button.url("🔐 GROUP",
+                                       "**[MAIN](https://t.me/narumisupport)**")],
                     ]
                 )
 
@@ -919,26 +921,26 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️",
+                    "Bantuan Dari 🔐 DRAGON-USERBOT",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⚡️ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ⚡️",
-                    text="""°ɴᴀᴅᴀ-ᴜsᴇʀʙᴏᴛ°""",
+                    " 🔐 DRAGON-USERBOT",
+                    text="""°🔐 DRAGON-USERBOT°""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ɴᴀᴅᴀ",
-                                "https://github.com/ReyyNada/Nada-Userbot"),
+                                "🔐 DRAGON",
+                                "https://www.xxxnxxx"),
 
                             custom.Button.url(
-                                "Channel",
-                                "t.me/stay_hallal")],
+                                "🔐 GROUP",
+                                "t.me/narumisupport")],
                         [custom.Button.url(
                             "License",
-                            "https://github.com/ReyyNada/Nada-Userbot/LICENSE")],
+                            "https://www.xxxnxxx")],
                     ],
                     link_preview=False,
                 )
@@ -974,10 +976,10 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈",
-                                       "t.me/bdrlsupportt"),
-                            Button.url("❈ᴄʜᴀɴɴᴇʟ❈",
-                                       "t.me/stay_hallal")],
+                            Button.url("🔐 ꜱᴜᴘᴘᴏʀᴛ",
+                                       "t.me/narumisupport"),
+                            Button.url("🔐 ᴄʜᴀɴɴᴇʟ",
+                                       "t.me/inibotsaya")],
                         [custom.Button.inline(
                             "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
                         [custom.Button.inline(

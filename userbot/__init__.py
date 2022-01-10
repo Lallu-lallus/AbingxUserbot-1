@@ -239,7 +239,7 @@ INLINE_PIC = os.environ.get(
     "INLINE_PIC") or "https://telegra.ph/file/d19e6f87ca34fb99d0646.jpg"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "▪️"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🌀"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -385,7 +385,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🔐 **Nada-Userbot Berhasil Diaktifkan**\n━━━━━━━━━━━━━━━━━━━\n🔐 **Bot of :** {ALIVE_NAME}\n🔐 **Dragon Ver. :** `7.0`\n━━━━━━━━━━━━━━━━━━━\n🔐 **Support : [HERE](https://t.me/narumisupport)**\n🔐 **Channel : [HERE](https://t.me/inibotsaya)\n━━━━━━━━━━━━━━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🔐 **Dragon-Userbot Berhasil Diaktifkan**\n━━━━━━━━━━━━━━━━━━━\n🔐 **Bot of :** {ALIVE_NAME}\n🔐 **Dragon Ver. :** `7.0`\n━━━━━━━━━━━━━━━━━━━\n🔐 **Support : [HERE](https://t.me/narumisupport)**\n🔐 **Channel : [HERE](https://t.me/inibotsaya)\n━━━━━━━━━━━━━━━━━━━")
     return
 
 

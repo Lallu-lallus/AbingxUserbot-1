@@ -385,7 +385,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🔐 **Dragon-Userbot Berhasil Diaktifkan**\n━━━━━━━━━━━━━━━━━━━\n🔐 **Bot of :** {ALIVE_NAME}\n🔐 **Dragon Ver. :** `7.0`\n━━━━━━━━━━━━━━━━━━━\n🔐 **Support : [HERE](https://t.me/narumisupport)**\n🔐 **Channel : [HERE](https://t.me/inibotsaya)\n━━━━━━━━━━━━━━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🔐 **Dragon-Userbot** `Berhasil Diaktifkan`\n━━━━━━━━━━━━━━━━━━━\n🔐 **Bot of :** {ALIVE_NAME}\n🔐 **Dragon Ver. :** `7.0`\n━━━━━━━━━━━━━━━━━━━\n🔐 **Support : [HERE](https://t.me/narumisupport)**\n🔐 **Channel : [HERE](https://t.me/inibotsaya)**\n━━━━━━━━━━━━━━━━━━━")
     return
 
 

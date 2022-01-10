@@ -82,9 +82,11 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**{ALIVE_NAME}**        \n"
-        f"**🔐 Kecepatan : ** '%sms'  \n"
-        f"**🔐 Bot Name : ** `Dragon-Userbot` \n" % (duration)
+        f"**🔐 DRAGON**        \n"
+        f" ━━━━━━━━━━━━━━━━━ \n"
+        f"**▪️ Kecepatan : ** '%sms'  \n"
+        f"**▪️ Bot Name : ** `Dragon-Userbot` \n" 
+        f" ━━━━━━━━━━━━━━━━━ " % (duration)
     )
 
 
@@ -97,11 +99,13 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**`{ALIVE_NAME}`**\n"
-        f"✧ **-ꜱɪɢɴᴀʟ- :** "
+        f"**🔐 `{ALIVE_NAME}`**\n"
+        f" ━━━━━━━━━━━━━━━━━ \n"
+        f"▪️ **-ꜱɪɢɴᴀʟ- :** "
         f"`%sms` \n"
-        f"✧ **-ᴜᴘᴛɪᴍᴇ- :** "
-        f"`{uptime}` \n" % (duration)
+        f"▪️ **-ᴜᴘᴛɪᴍᴇ- :** "
+        f"`{uptime}` \n" 
+        f" ━━━━━━━━━━━━━━━━━ "% (duration)
     )
 
 
@@ -123,10 +127,12 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**🔐 Dragon-Userbot**\n"
-        f"➾ __Signal__    __:__ "
+        f" ━━━━━━━━━━━━━━━━━ \n"
+        f"🔐 __Signal__    __:__ "
         f"`%sms` \n"
-        f"➾ __Uptime__ __:__ "
-        f"`{uptime}` \n" % (duration)
+        f"🔐 __Uptime__ __:__ "
+        f"`{uptime}` \n" 
+        f" ━━━━━━━━━━━━━━━━━ " % (duration)
     )
 
 
@@ -146,12 +152,14 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**🔐 Dragon-Userbot**\n\n"
-        f"** ▹  Sɪɢɴᴀʟ   :** "
+        f"**🔐 DRAGON**\n\n"
+        f" ━━━━━━━━━━━━━━━━━ \n"
+        f"** ▪️  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
-        f"** ▹  Uᴘᴛɪᴍᴇ  :** "
+        f"** ▪️  Uᴘᴛɪᴍᴇ  :** "
         f"`{uptime}` \n"
-        f"** ▹  Oᴡɴᴇʀ   :** `{ALIVE_NAME}` \n" % (duration)
+        f"** ▪️  Oᴡɴᴇʀ   :** `{ALIVE_NAME}` \n" 
+        f" ━━━━━━━━━━━━━━━━━ " % (duration)
     )
 
 

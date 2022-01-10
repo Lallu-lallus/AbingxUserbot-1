@@ -47,14 +47,14 @@ async def quotess(qotli):
     if qotli.fwd_from:
         return
     if not qotli.reply_to_msg_id:
-        return await qotli.edit("```Mohon Balas Ke Pesan```")
+        return await qotli.edit("```🔐 Reply Message required```")
     reply_message = await qotli.get_reply_message()
     if not reply_message.text:
-        return await qotli.edit("```Mohon Balas Ke Pesan```")
+        return await qotli.edit("```🔐 Reply message required```")
     chat = "@QuotLyBot"
     if reply_message.sender.bot:
-        return await qotli.edit("```Mohon Balas Ke Pesan```")
-    await qotli.edit("```Sedang Memproses Sticker, Mohon Menunggu```")
+        return await qotli.edit("```🔐 Reply message required```")
+    await qotli.edit("```🔐 Processing . . .```")
     try:
         async with bot.conversation(chat) as conv:
             try:

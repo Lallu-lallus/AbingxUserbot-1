@@ -182,7 +182,7 @@ async def pingme(pong):
         f"`%sms` \n"
         f"▪️ **ᴜᴘᴛɪᴍᴇ :** "
         f"`{uptime}` \n"
-        f"▪️✹⃝⁦꙰ᴏɴᴡᴇʀ :** `{ALIVE_NAME}`\n" 
+        f"▪️**✹⃝⁦꙰ᴏɴᴡᴇʀ :** `{ALIVE_NAME}`\n" 
         f" ━━━━━━━━━━━━━━━━━ " % (duration)
     )
 

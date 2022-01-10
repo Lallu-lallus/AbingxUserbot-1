@@ -122,17 +122,17 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit("**🔐DRAGON-USERBOT** `Berhasil Di Update!`")
+    await event.edit("**🔐DRAGON-USERBOT** `Finishing`")
     await asyncio.sleep(1)
-    await event.edit("**🔐 DRAGON-USERBOT** `Di Restart....`")
+    await event.edit("**🔐 DRAGON-USERBOT** `Restarting`")
     await asyncio.sleep(1)
-    await event.edit("`Mohon Menunggu Beberapa Detik.`")
+    await event.edit("**🔐 DRAGON-USERBOT** `Starting Up`")
     await asyncio.sleep(10)
     await event.delete()
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "#BOT \n" "**🔐 Dragon-Userbot Telah Di Perbarui.**"
+            BOTLOG_CHATID, "#BOT \n" "**🔐 DRAGON-USERBOT :** `Update Done`"
         )
         await asyncio.sleep(100)
         await event.delete()
@@ -146,7 +146,7 @@ async def update(event, repo, ups_rem, ac_br):
 @register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("**🔐 Mengecek Pembaruan, Silakan Menunggu....**")
+    await event.edit("**🔐 DRAGON-USERBOT :** `Looking for updates`")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
@@ -196,10 +196,10 @@ async def upstream(event):
 
     if changelog == "" and force_update is False:
         await event.edit(
-            f"\n🔐 Dragon-Userbot : \n"
-            f"Is Up to Date by : **[MAIN](https://t.me/triplenineee)** \n "
+            f"\n🔐 DRAGON-USERBOT : \n"
+            f"Is Up to Date By : **[MAIN](https://t.me/triplenineee)** \n "
         )
-        await asyncio.sleep(15)
+        await asyncio.sleep(20)
         await event.delete()
         return repo.__del__()
 
@@ -234,7 +234,7 @@ async def upstream(event):
         await event.edit("` 🔐 Dragon-Userbot , Loading....35%`")
         await event.edit("` 🔐 Dragon-Userbot , Loading....77%`")
         await event.edit("` 🔐 Dragon-Userbot , Updating...90%`")
-        await event.edit("` 🔐 Dragon-Userbot , Mohon Tunggu Sebentar....100%`"
+        await event.edit("` 🔐 Dragon-Userbot , Finishing...100%`"
         )
 
     if conf == "now":

@@ -248,11 +248,11 @@ async def ban(bon):
     # Shout out the ID, so that fedadmins can fban later
     if reason:
         await bon.edit(
-            f"`PENGGUNA:` [{user.first_name}](tg://user?id={user.id})\n`ID:` `{str(user.id)}` Telah Di Banned!✅\n`Alasan:` {reason}"
+            f"`User :` [{user.first_name}](tg://user?id={user.id})\n`ID:` `{str(user.id)}` Is Banned ✅\n`Alasan:` {reason}"
         )
     else:
         await bon.edit(
-            f"`PENGGUNA:` [{user.first_name}](tg://user?id={user.id})\n`ID:` `{str(user.id)}` Telah Di Banned!✅"
+            f"`User :` [{user.first_name}](tg://user?id={user.id})\n`ID:` `{str(user.id)}` Is Banned ✅"
         )
     # Announce to the logging group if we have banned the person
     # successfully!

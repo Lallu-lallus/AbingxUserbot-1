@@ -189,14 +189,14 @@ async def sedNinjaToggle(event):
 
 @register(pattern=".chatinfo(?: |$)(.*)", outgoing=True)
 async def info(event):
-    await event.edit("`Menganalisis Obrolan Ini...`")
+    await event.edit("`🔐 Scanning Info`")
     chat = await get_chatinfo(event)
     caption = await fetch_info(chat, event)
     try:
         await event.edit(caption, parse_mode="html")
     except Exception as e:
         print("Exception:", e)
-        await event.edit("`Terjadi Kesalah Yang Tidak Terduga.`")
+        await event.edit("`🔐 Error, Terminate By :` **[DRAGON](https://t.me/tripleneee)** ")
     return
 
 
@@ -221,13 +221,13 @@ async def get_chatinfo(event):
         try:
             chat_info = await event.client(GetFullChannelRequest(chat))
         except ChannelInvalidError:
-            await event.edit("`Group/Channel Tidak Valid`")
+            await event.edit("`🔐 Invalid Group / Channel `")
             return None
         except ChannelPrivateError:
-            await event.edit("`Ini Adalah Group/Channel Privasi Atau Mungkin Anda Telah Terbanned Dari Sana`")
+            await event.edit("`🔐 Unban required from Group / Channel`")
             return None
         except ChannelPublicGroupNaError:
-            await event.edit("`Channel Atau Supergroup Tidak Ditemukan`")
+            await event.edit("`🔐 Group / Channel Not Found`")
             return None
         except (TypeError, ValueError) as err:
             await event.edit(str(err))
@@ -321,52 +321,52 @@ async def fetch_info(chat, event):
         for bot in bots_list:
             bots += 1
 
-    caption = "<b>INFORMASI OBROLAN:</b>\n"
-    caption += f"ID: <code>{chat_obj_info.id}</code>\n"
+    caption = "<b>GROUP / CHANNEL INFO:</b>\n"
+    caption += f"**ID**: <code>{chat_obj_info.id}</code>\n"
     if chat_title is not None:
-        caption += f"{chat_type} Nama: {chat_title}\n"
+        caption += f"**{chat_type} Name** : {chat_title}\n"
     if former_title is not None:  # Meant is the very first title
-        caption += f"Nama Lama: {former_title}\n"
+        caption += f"**Old name** : {former_title}\n"
     if username is not None:
-        caption += f"{chat_type} Type: Publik\n"
-        caption += f"Link: {username}\n"
+        caption += f"**{chat_type} Type **: Publik\n"
+        caption += f"**LINK** : {username}\n"
     else:
-        caption += f"{chat_type} type: Privasi\n"
+        caption += f"**{chat_type} Type** : Privasi\n"
     if creator_username is not None:
-        caption += f"Pembuat: {creator_username}\n"
+        caption += f"**CREATOR** : {creator_username}\n"
     elif creator_valid:
-        caption += f"Pembuat: <a href=\"tg://user?id={creator_id}\">{creator_firstname}</a>\n"
+        caption += f"**CREATOR** : <a href=\"tg://user?id={creator_id}\">{creator_firstname}</a>\n"
     if created is not None:
-        caption += f"Informasi Pembuatan: <code>{created.date().strftime('%b %d, %Y')} - {created.time()}</code>\n"
+        caption += f"**MANUFACTURE **: <code>{created.date().strftime('%b %d, %Y')} - {created.time()}</code>\n"
     else:
-        caption += f"Informasi Pembuatan: <code>{chat_obj_info.date.date().strftime('%b %d, %Y')} - {chat_obj_info.date.time()}</code> {warn_emoji}\n"
-    caption += f"Data Centre ID: {dc_id}\n"
+        caption += f"**MANUFACTURE** : <code>{chat_obj_info.date.date().strftime('%b %d, %Y')} - {chat_obj_info.date.time()}</code> {warn_emoji}\n"
+    caption += f"**DATA CENTRE ID** : {dc_id}\n"
     if exp_count is not None:
         chat_level = int((1 + sqrt(1 + 7 * exp_count / 14)) / 2)
-        caption += f"{chat_type} Level: <code>{chat_level}</code>\n"
+        caption += f"**{chat_type} LEVEL** : <code>{chat_level}</code>\n"
     if messages_viewable is not None:
-        caption += f"Pesan Yang Dapat Dilihat: <code>{messages_viewable}</code>\n"
+        caption += f"**VISIBLE MESSAGE** : <code>{messages_viewable}</code>\n"
     if messages_sent:
-        caption += f"Pesan Dikirim: <code>{messages_sent}</code>\n"
+        caption += f"**MESSAGE SENT** : <code>{messages_sent}</code>\n"
     elif messages_sent_alt:
-        caption += f"Pesan Dikirim: <code>{messages_sent_alt}</code> {warn_emoji}\n"
+        caption += f"**MESSAGE SENT** : <code>{messages_sent_alt}</code> {warn_emoji}\n"
     if members is not None:
-        caption += f"Member: <code>{members}</code>\n"
+        caption += f"**MEMBER** : <code>{members}</code>\n"
     if admins is not None:
-        caption += f"Admin: <code>{admins}</code>\n"
+        caption += f"**ADMIN** : <code>{admins}</code>\n"
     if bots_list:
-        caption += f"Bot: <code>{bots}</code>\n"
+        caption += f"**BOT** : <code>{bots}</code>\n"
     if members_online:
-        caption += f"Sedang Online: <code>{members_online}</code>\n"
+        caption += f"**ONLINE** : <code>{members_online}</code>\n"
     if restrcited_users is not None:
-        caption += f"Pengguna Yang Dibatasi: <code>{restrcited_users}</code>\n"
+        caption += f"**RESTRCITED USER **: <code>{restrcited_users}</code>\n"
     if banned_users is not None:
-        caption += f"Banned Pengguna: <code>{banned_users}</code>\n"
+        caption += f"**BANNED USER** : <code>{banned_users}</code>\n"
     if group_stickers is not None:
-        caption += f"{chat_type} Sticker: <a href=\"t.me/addstickers/{chat.full_chat.stickerset.short_name}\">{group_stickers}</a>\n"
+        caption += f"**{chat_type} Sticker **: <a href=\"t.me/addstickers/{chat.full_chat.stickerset.short_name}\">{group_stickers}</a>\n"
     caption += "\n"
     if not broadcast:
-        caption += f"Mode Slow: {slowmode}"
+        caption += f"Slow Mode: {slowmode}"
         if hasattr(
                 chat_obj_info,
                 "slowmode_enabled") and chat_obj_info.slowmode_enabled:
@@ -374,19 +374,19 @@ async def fetch_info(chat, event):
         else:
             caption += "\n\n"
     if not broadcast:
-        caption += f"Supergrup: {supergroup}\n\n"
+        caption += f"**Supergrup**: {supergroup}\n\n"
     if hasattr(chat_obj_info, "Terbatas"):
-        caption += f"Terbatas: {restricted}\n"
+        caption += f"**LIMITED** : {restricted}\n"
         if chat_obj_info.restricted:
             caption += f"> Platform: {chat_obj_info.restriction_reason[0].platform}\n"
-            caption += f"> Alasan: {chat_obj_info.restriction_reason[0].reason}\n"
-            caption += f"> Teks: {chat_obj_info.restriction_reason[0].text}\n\n"
+            caption += f"> Reason: {chat_obj_info.restriction_reason[0].reason}\n"
+            caption += f"> Text: {chat_obj_info.restriction_reason[0].text}\n\n"
         else:
             caption += "\n"
     if hasattr(chat_obj_info, "scam") and chat_obj_info.scam:
         caption += "Scam: <b>Yes</b>\n\n"
     if hasattr(chat_obj_info, "verified"):
-        caption += f"Di Verifikasi Oleh Telegram: {verified}\n\n"
+        caption += f"**Verification** : {verified}\n\n"
     if description:
         caption += f"Deskripsi: \n<code>{description}</code>\n"
     return caption
@@ -398,7 +398,7 @@ async def _(event):
         return
     to_add_users = event.pattern_match.group(1)
     if event.is_private:
-        await event.edit("`.invite` Pengguna Ke Obrolan, Tidak Ke Pesan Pribadi")
+        await event.edit("`🔐 Can't Invite user here`")
     else:
         if not event.is_channel and event.is_group:
             # https://lonamiwebs.github.io/Telethon/methods/messages/add_chat_user.html
@@ -411,7 +411,7 @@ async def _(event):
                     ))
                 except Exception as e:
                     await event.reply(str(e))
-            await event.edit("`Berhasil Menambahkan Pengguna Ke Obrolan`")
+            await event.edit("`🔐 Successfully added user`")
         else:
             # https://lonamiwebs.github.io/Telethon/methods/channels/invite_to_channel.html
             for user_id in to_add_users.split(" "):
@@ -422,7 +422,7 @@ async def _(event):
                     ))
                 except Exception as e:
                     await event.reply(str(e))
-            await event.edit("`Berhasil Menambahkan Pengguna Ke Obrolan`")
+            await event.edit("`🔐 Successfully added user`")
 
 CMD_HELP.update({
     "chat":

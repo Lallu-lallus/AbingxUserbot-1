@@ -251,10 +251,10 @@ async def upstream(event):
 CMD_HELP.update(
     {
         "update": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update`"
-        "\n• : Untuk Melihat Pembaruan Terbaru Bdrl-Userbot."
+        "\n• : Checking for update."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update now`"
-        "\n• : Memperbarui Bdrl-Userbot."
+        "\n• : Starting update."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update deploy`"
-        "\n• : Memperbarui Bdrl-Userbot Dengan Cara Men-Deploy Ulang."
+        "\n• : Update in deploy"
     }
 )

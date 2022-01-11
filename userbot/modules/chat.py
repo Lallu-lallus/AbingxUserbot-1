@@ -33,11 +33,11 @@ async def _(event):
         r_msg = await event.get_reply_message()
         if r_msg.media:
             bot_api_file_id = pack_bot_file_id(r_msg.media)
-            await event.edit("ID Grup: `{}`\nID Dari Pengguna : `{}`\nID Bot File API: `{}`".format(str(event.chat_id), str(r_msg.from_id), bot_api_file_id))
+            await event.edit("🔐 Group ID : \n`{}`\n🔐 ID From User : \n`{}`\n 🔐API Bot ID : `{}`".format(str(event.chat_id), str(r_msg.from_id), bot_api_file_id))
         else:
             await event.edit("ID Grup: `{}`\nID Dari Pengguna : `{}`".format(str(event.chat_id), str(r_msg.from_id)))
     else:
-        await event.edit("ID Grup: `{}`".format(str(event.chat_id)))
+        await event.edit("🔐 ID Grup: `{}`".format(str(event.chat_id)))
 
 
 @register(outgoing=True, pattern="^.link(?: |$)(.*)")

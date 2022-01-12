@@ -8,7 +8,7 @@ from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, bot
 from userbot.events import register
 
 THUMB_IMAGE_PATH = "./thumb_image.jpg"
-
+main = "[MAIN](https://t.me/triplenineee)"
 
 @register(outgoing=True, pattern=r"^\.mmf(?: |$)(.*)")
 async def mim(event):
@@ -16,21 +16,21 @@ async def mim(event):
         return
     if not event.reply_to_msg_id:
         await event.edit(
-            "Mohon Balas Ke Gambar Ketik `.mmf 'Teks Atas' ; 'Teks Bawah'` "
+            "🔐 `Reply message required` "
         )
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("```Mohon Balas Ke Gambar/Sticker/Gif```")
+        await event.edit("```🔐 Reply Pict, Sticker, or Gif```")
         return
     reply_message.sender
     await bot.download_file(reply_message.media)
     if reply_message.sender.bot:
-        await event.edit("```Balas ke pesan pengguna yang sebenarnya.```")
+        await event.edit("```🔐 Error, Terminate By: {main}```")
         return
     else:
         await event.edit(
-            "```Prosess Merubah Gambar Ini.. ```"
+            "```🔐 Processing . . . ```"
         )
         await asyncio.sleep(5)
         text = event.pattern_match.group(1)
@@ -172,21 +172,21 @@ async def mim(event):
         return
     if not event.reply_to_msg_id:
         await event.edit(
-            "Mohon Balas Ke Gambar Ketik `.mmf2 'Teks Atas' ; 'Teks Bawah'` "
+            "🔐 `Reply message required` "
         )
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("```Mohon Balas Ke Gambar/Sticker/Gif```")
+        await event.edit("```🔐 Reply pict, sticker, or Gif```")
         return
     reply_message.sender
     await bot.download_file(reply_message.media)
     if reply_message.sender.bot:
-        await event.edit("```Balas Ke Pesan Pengguna Yang Sebenarnya.```")
+        await event.edit("```🔐 Error, Terminate by : {main}```")
         return
     else:
         await event.edit(
-            "```Mengubah Gambar Ini Saatnya Menulis```"
+            "```🔐 Processing```"
         )
         await asyncio.sleep(5)
         text = event.pattern_match.group(1)

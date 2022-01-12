@@ -145,7 +145,7 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"**🔐 DRAGON SECURITY\n━━━━━━━━━━━━━━━━━\n▪️**Request By:** `{ALIVE_NAME}`\n▪️**For User:** [{user.first_name}](tg://user?id={user.id})\n▪️**Action :** `Global Banned`\n━━━━━━━━━━━━━━━━━"
+        f"**🔐 DRAGON SECURITY**\n━━━━━━━━━━━━━━━━━\n▪️ **Request:** `{ALIVE_NAME}`\n▪️ **User:** [{user.first_name}](tg://user?id={user.id})\n▪️ **Action :** `Global Banned`\n━━━━━━━━━━━━━━━━━"
     )
 
 

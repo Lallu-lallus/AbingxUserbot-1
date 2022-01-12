@@ -150,7 +150,7 @@ async def gben(userbot):
         f"▪️**Request :** {ALIVE_NAME}\n"
         f"▪️**User:** [{user.first_name}](tg://user?id={user.id})\n"
         f"▪️**Action :** 🔐 `Global Banned` \n"
-        f" ━━━━━━━━━━━━━━━━━ \n"
+        f" ━━━━━━━━━━━━━━━━━ "
     )
 
 

@@ -20,8 +20,6 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Hy my name is Kenzhu`")
-    (sleep(3)
-    await typew.edit("`I'm 20 years old`")
 
 # Create by myself @localheart
 

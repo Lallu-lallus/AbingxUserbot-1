@@ -16,17 +16,52 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.punten(?: |$)(.*)')
+@register(outgoing=True, pattern='^.trio(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`\n┻┳|―-∩`"
-                     "`\n┳┻|     ヽ`"
-                     "`\n┻┳|    ● |`"
-                     "`\n┳┻|▼) _ノ`"
-                     "`\n┻┳|￣  )`"
-                     "`\n┳ﾐ(￣ ／`"
-                     "`\n┻┳T￣|`"
-                     "\n**Punten**")
+    await typew.edit("K")
+    (sleep(3)
+    await typew.edit("KE")
+    (sleep(3)
+    await typew.edit("KEN")
+    (sleep(3)
+    await typew.edit("KENZ")
+    (sleep(3)
+    await typew.edit("KENZH")
+    (sleep(3)
+    await typew.edit("KENZHU")
+    (sleep(3)
+    await typew.edit("KENZHU")
+    (sleep(1)
+    await typew.edit("👀")
+    (sleep(2)
+    await typew.edit("KENZHU")
+    (sleep(2)
+    await typew.edit("👀")
+    (sleep(2)
+    await typew.edit("KENZHU")
+    (sleep(2)
+    await typew.edit("👀")
+    (sleep(2)  
+    await typew.edit("KENZHU")
+    (sleep(2)
+    await typew.edit("👀")
+    (sleep(2)   
+    await typew.edit("KENZHU")
+    (sleep(2)
+    await typew.edit("👀")
+    (sleep(2)
+    await typew.edit("KENZHU")
+    (sleep(3)
+    await typew.edit("KENZH")
+    (sleep(3)
+    await typew.edit("KENZ")
+    (sleep(3)
+    await typew.edit("KEN")
+    (sleep(3)
+    await typew.edit("KE")
+    (sleep(3)
+    await typew.edit("K")
 
 # Create by myself @localheart
 

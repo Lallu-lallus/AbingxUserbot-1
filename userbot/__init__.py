@@ -504,8 +504,8 @@ with bot:
                     f"sᴇᴍᴏɢᴀ ʙᴇᴛᴀʜ ᴅɪsɪɴɪ ʏᴀ​ ✨\n",
                     buttons=[
                         [
-                            Button.url("ʀᴇᴘᴏ​",
-                                       "https://www.xxxnxxx")],
+                            Button.url("SUPPORT",
+                                       "https://t.me/triplenineee")],
                     ]
                 )
 
@@ -516,7 +516,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n🔐 Powered By : **[HERE](https://t.me/triplenineee)**\n\n",
+                    f"{START_WELCOME}\n\n🔐 Powered By : **[KENZU](https://t.me/triplenineee)**\n\n",
                     buttons=[
                         [
                             custom.Button.inline(
@@ -550,7 +550,7 @@ with bot:
             event.builder
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@SangDappaa"):
+                    "@triplenineee"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 text = f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME} "
                 await event.edit(text,

@@ -3,7 +3,7 @@ FROM vckyouuu/geezprojects:buster
 #━━━━━ Userbot Telegram ━━━━━
 #━━━━━ By Dragon-Userbot ━━━━━
 
-RUN git clone -b Dragon-Userbot https://github.com/Kenzuuu/Dragon-Userbot /root/userbot
+RUN git clone -b Kyy-Userbot https://github.com/Kenzuuu/Dragon-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot

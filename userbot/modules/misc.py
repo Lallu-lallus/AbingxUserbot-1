@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n🔐[REPO](https://www.xxxnxxx.com)"
+        "\n🔐[REPO](https://www.youtube.com)"
         "\n🔐 [TELEGRAM](https://telegram.org)"
         "\n🔐 [MAIN](https://t.me/triplenineee)")
 
@@ -111,7 +111,7 @@ async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
         "**Hey**, I am using **🔐 Dragon-Userbot** \n"
-        "▪️ **Repo Userbot :** [GITHUB](https://www.xxxnxxx.com)\n"
+        "▪️ **Repo Userbot :** [GITHUB](https://www.youtube.com)\n"
         "▪️ **Owner Bot       :** [MAIN](t.me/triplenineee)\n"
         "▪️ **Support           :** [SUPPORT](https://t.me/narumisupport)\n"
         "▪️ **Channel           :** [CHANNEL](https://t.me/inibotsaya)\n"

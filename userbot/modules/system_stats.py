@@ -314,7 +314,7 @@ async def redis(alive):
         f"┣  `Branch   :` **[MAIN](https://t.me/triplenineee)** \n"
         f"┣  `Bot Ver  :` {BOT_VER} \n"
         f"┣  `Modules  :` {len(modules)} Modules \n"
-        f"┣  `GitHub   :` **[MAIN](https://www.xxxnxxx.com)** \n"
+        f"┣  `GitHub   :` **[MAIN](https://www.youtube.com)** \n"
         f"┣  `Support  :` **[GROUP](https://t.me/narumisupport)** \n"
         f"┣  `Owner    :` **[DRAGON](https://t.me/triplenineee)** \n"
         f"┗━━━━━━━━━━━━━━━━━━━")

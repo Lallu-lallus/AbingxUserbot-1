@@ -9,6 +9,7 @@ import asyncio
 from userbot import ALIVE_NAME, CMD_HELP
 from userbot.events import register
 from platform import uname
+import sys
 
 modules = CMD_HELP
 

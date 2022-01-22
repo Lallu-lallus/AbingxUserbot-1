@@ -152,15 +152,15 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**🔐 DRAGON**\n\n"
-        f" ━━━━━━━━━━━━━━━━━ \n"
-        f"** ▪️  Sɪɢɴᴀʟ   :** "
-        f"`%sms` \n"
-        f"** ▪️  Uᴘᴛɪᴍᴇ  :** "
-        f"`{uptime}` \n"
-        f"** ▪️  Oᴡɴᴇʀ   :** `{ALIVE_NAME}` \n" 
-        f" ━━━━━━━━━━━━━━━━━ " % (duration)
-    )
+                   f" ❖  ─『**SIGNAL**』─   ❖\n"
+                   f"╔╦══••✠•❀-❀•✠••══╦╗ \n"
+                   f"❅ **Signal :**   "
+                   f"`%sms` \n"
+                   f"❅ **Uptime :** "    
+                   f"`{uptime}` \n"
+                   f"❅ **Owner :**`{ALIVE_NAME}`\n" 
+                   f"╚╩══••✠•❀-❀•✠••══╩╝ "  % (duration)
+                   )
 
 
 @register(outgoing=True, pattern="^.ping$")
@@ -182,13 +182,13 @@ async def pingme(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"❖─✦──『**PING**』──✦─❖\n"
+        f" ❖ ✦ ─『**PING**』─ ✦ ❖\n"
         f"╔╦══••✠•❀-❀•✠••══╦╗ \n"
-        f"❅ **『Ping :**   "
+        f"❅ **Ping :**   "
         f"`%sms` \n"
-        f"❅ **『Uptime :** "    
+        f"❅ **Uptime :** "    
         f"`{uptime}` \n"
-        f"❅ **『Owner :**`{ALIVE_NAME}`\n" 
+        f"❅ **Owner :**`{ALIVE_NAME}`\n" 
         f"╚╩══••✠•❀-❀•✠••══╩╝ " % (duration)
     )
 
@@ -241,11 +241,12 @@ async def pingme(pong):
     start = datetime.now()
     await pong.edit("**◕‿- PONG!!🏓**")
     await asyncio.sleep(1)
-    await pong.edit("☠️")
+    await pong.edit("🔐")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit(f"**🔐 Dragon : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
+    await pong.edit(f"**Master :**`{ALIVE_NAME}`\n\n
+                     "⚙️ 『`%sms`』" % (duration))
 
 
 @register(outgoing=True, pattern="^.pink$")

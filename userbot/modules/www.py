@@ -178,12 +178,7 @@ async def pingme(pong):
     await pong.edit("**Connecti_**")
     await pong.edit("**Connectin_**")
     await pong.edit("**Connecting**")
-    await pong.edit(" ‎ ‎ ‎ ‎ ")
-    await asyncio.sleep(2)
     await pong.edit("**Connected**")
-    await pong.edit(" ‎ ‎ ‎ ‎ ‎")
-    await asyncio.sleep(2)
-    await pong.edit("**Connecting**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(

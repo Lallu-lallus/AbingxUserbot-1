@@ -152,7 +152,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-                   f" ❖    ─『**SIGNAL**』─     ❖\n"
+                   f" ❖     ─『**SIGNAL**』─      ❖\n"
                    f"╔╦══••✠•❀-❀•✠••══╦╗ \n"
                    f"❅ **Signal :**   "
                    f"`%sms` \n"
@@ -182,7 +182,7 @@ async def pingme(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f" ❖  ✦  ─『**PING**』─  ✦  ❖\n"
+        f" ❖  ✦   ─『**PING**』─   ✦  ❖\n"
         f"╔╦══••✠•❀-❀•✠••══╦╗ \n"
         f"❅ **Ping :**   "
         f"`%sms` \n"

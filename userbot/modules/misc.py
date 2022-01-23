@@ -59,7 +59,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`🔐 Mematikan Dragon-Userbot....`")
+    await event.edit("`🔐 Mematikan AbingxUserbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -70,11 +70,11 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`🔐 Restarting Dragon-Userbot...`")
+    await event.edit("`🔐 Restarting AbingxUserbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
-        await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
+        await event.client.send_messageBOTLOG_CHATID, "#RESTARTBOT \n"
                                         "`Userbot Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
@@ -110,7 +110,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**Hey**, I am using **Dragon-Userbot** \n"
+        "**Hey**, I am using **AbingxUserbot** \n"
         "━━━━━━━━━━━━━━━━━━━ \n\n"
         "❅ **Repo Userbot :** [GITHUB](https://www.youtube.com)\n"
         "❅ **Owner Bot       :** [MAIN](t.me/triplenineee)\n"

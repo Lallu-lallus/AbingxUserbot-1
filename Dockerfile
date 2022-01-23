@@ -1,15 +1,15 @@
 # Using Python Slim-Buster
 FROM vckyouuu/geezprojects:buster
 #━━━━━ Userbot Telegram ━━━━━
-#━━━━━ By Dragon-Userbot ━━━━━
+#━━━━━ By Abing-Userbot ━━━━━
 
-RUN git clone -b Kenzhu https://github.com/Kenzuuu/Dragon-Userbot /root/userbot
+RUN git clone -b Abing https://github.com/nabilrmdaan/AbingxUserbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/Kenzuuu/Dragon-Userbot/Kenzhu/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/nabilrmdaan/AbingxUserbot/Abing/requirements.txt
 
 EXPOSE 80 443
 

@@ -164,8 +164,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "🔐 **Bot Name :** `DRAGON-USERBOT` \n "
-            f"🔐 **Bot Versi :** `BLACK DRAGON`\n "
+            "🔐 **Bot Name :** `ABINGXUSERBOT` \n "
+            f"🔐 **Bot Versi :** `ABING XUSERBOT`\n "
             f"🔐 **Revisi:** DU.01.00 \n "
             f"{revout}"
         )
@@ -303,7 +303,7 @@ async def redis(alive):
     await alive.edit("__Sedang Memuat...__")
     await alive.edit("__Sedang Memuat..__")
     await alive.edit("__Sedang Memuat...__")
-    await alive.edit("☠️")
+    await alive.edit("🌀")
     await asyncio.sleep(2)
     output = (
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
@@ -315,8 +315,8 @@ async def redis(alive):
         f"┣  `Bot Ver  :` {BOT_VER} \n"
         f"┣  `Modules  :` {len(modules)} Modules \n"
         f"┣  `GitHub   :` **[MAIN](https://www.youtube.com)** \n"
-        f"┣  `Support  :` **[GROUP](https://t.me/narumisupport)** \n"
-        f"┣  `Owner    :` **[DRAGON](https://t.me/triplenineee)** \n"
+        f"┣  `Support  :` **[GROUP](https://t.me/abingsupport)** \n"
+        f"┣  `Owner    :` **[ABING](https://t.me/akuabing)** \n"
         f"┗━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:

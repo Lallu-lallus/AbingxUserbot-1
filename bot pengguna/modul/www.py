@@ -64,7 +64,7 @@ async def _(kyy):
     await kyy.reply(random.choice(absen))
 
 
-@register(incoming=True, from_users=DEVS, pattern=r"^.dragon$")
+@register(incoming=True, from_users=DEVS, pattern=r"^.abing$")
 async def _(kyy):
     await kyy.reply(random.choice(pacar))
 
@@ -78,14 +78,14 @@ async def redis(pong):
     await pong.edit("**✲✲**")
     await pong.edit("**✲✲✲**")
     await pong.edit("__DUAR__")
-    await pong.edit("🔐")
+    await pong.edit("🤖")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**🤴 DRAGON**        \n"
+        f"**🤴 ABING**        \n"
         f" ━━━━━━━━━━━━━━━━━ \n"
         f"**📥 Kecepatan : ** '%sms'  \n"
-        f"**⚙️ Bot Name : ** `Dragon-Userbot` \n" 
+        f"**⚙️ Bot Name : ** `AbingxUserbot` \n" 
         f" ━━━━━━━━━━━━━━━━━ " % (duration)
     )
 
@@ -126,7 +126,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚙️ Dragon-Userbot**\n"
+        f"**⚙️ AbingxUserbot**\n"
         f" ━━━━━━━━━━━━━━━━━ \n"
         f"📡 __Signal__    __:__ "
         f"`%sms` \n"
@@ -218,7 +218,7 @@ async def speedtst(spd):
         f"`{result['ping']}` \n"
         "🌏 **ISP:** "
         f"`{result['client']['isp']}` \n"
-        "⚙️ **BOT:** Dragon-Userbot"
+        "⚙️ **BOT:** AbingxUserbot"
     )
 
 
@@ -241,7 +241,7 @@ async def pingme(pong):
     start = datetime.now()
     await pong.edit("**◕‿- PONG!!🏓**")
     await asyncio.sleep(1)
-    await pong.edit("🔐")
+    await pong.edit("🤖")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000

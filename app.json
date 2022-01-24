@@ -1,6 +1,6 @@
 {
-  "name": "Dragon-Userbot",
-  "description": "DRAGON-USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "AbingxUserbot",
+  "description": "ABINGXUSERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/3e6ad3242d79d7f088e7d.jpg",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Kenzuuu/Dragon-Userbot",
+  "repository": "https://github.com/Abing/AbingxUserbot",
   "telegram": "https://t.me/triplenineee",
   "success_url": "https://t.me/narumisupport",
   "stack": "container",
@@ -86,7 +86,7 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "🔐 Dragon-Userbot",
+      "value": "🥶 AbingxUserbot",
       "required": false
     },
     "ALIVE_NAME": {
@@ -99,8 +99,8 @@
       "required": false
     },
     "Nada_TEKS_KUSTOM": {
-      "description": "Kustom Pesan Alive Mu Untuk Perintah .bdrlalive (Isi Terserah)",
-      "value": "🔐 I'am Using Dragon-Userbot ",
+      "description": "Kustom Pesan Alive Mu Untuk Perintah .abingalive (Isi Terserah)",
+      "value": "🥶 I'am Using AbingxUserbot ",
       "required": false 
     },
     "S_PACK_NAME": {

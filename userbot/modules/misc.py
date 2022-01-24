@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/Kenzuuu/Dragon-Userbot"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/nabilrmdaan/AbingxUserbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -113,9 +113,9 @@ async def repo_is_here(wannasee):
         "**Hey**, I am using **AbingxUserbot** \n"
         "━━━━━━━━━━━━━━━━━━━ \n\n"
         "❅ **Repo Userbot :** [GITHUB](https://www.youtube.com)\n"
-        "❅ **Owner Bot       :** [MAIN](t.me/triplenineee)\n"
+        "❅ **Owner Bot       :** [MAIN](t.me/akuabing)\n"
         "❅ **Support           :** [SUPPORT](https://t.me/narumisupport)\n"
-        "❅ **Channel           :** [CHANNEL](https://t.me/inibotsaya)\n"
+        "❅ **Channel           :** [CHANNEL](https://t.me/abingsupport)\n"
         "━━━━━━━━━━━━━━━━━━━ \n "
     )
 
@@ -275,11 +275,11 @@ CMD_HELP.update({
     \n↳ : Dapatkan item acak dari daftar item.",
     "sleep": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`\
     \n↳ : `.sleep`\
-    \n  •  **Function : Biarkan Dragon-Userbot tidur selama beberapa detik.",
+    \n  •  **Function : Biarkan AbingxUserbot tidur selama beberapa detik.",
     "shutdown": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`\
     \n↳ : Mematikan bot",
     "repo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repo`\
-    \n↳ : Menampilan link Repository Dragon-Userbot.",
+    \n↳ : Menampilan link Repository AbingxUserbot.",
     "string": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.string`\
     \n↳: Menampilkan link Narumi String",
     "readme": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.readme`\

@@ -85,9 +85,9 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "**Here's Something for You to Read :**\n\n"
-        "\n❅ [REPO](https://www.youtube.com)"
+        "\n❅ [REPO](https://github.com/nabilrmdaan/AbingxUserbot)"
         "\n❅ [TELEGRAM](https://telegram.org)"
-        "\n❅ [MAIN](https://t.me/triplenineee)")
+        "\n❅ [MAIN](https://t.me/akuabing)")
 
 
 @register(outgoing=True, pattern="^.repeat (.*)")
@@ -110,7 +110,7 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "**Hey**, I am using **AbingxUserbot** \n"
         "━━━━━━━━━━━━━━━━━━━ \n\n"
-        "❅ **Repo Userbot :** [GITHUB](https://www.youtube.com)\n"
+        "❅ **Repo Userbot :** [GITHUB](https://github.com/nabilrmdaan/AbingxUserbot)\n"
         "❅ **Owner Bot       :** [MAIN](t.me/akuabing)\n"
         "❅ **Support           :** [SUPPORT](https://t.me/narumisupport)\n"
         "❅ **Channel           :** [CHANNEL](https://t.me/abingsupport)\n"

@@ -8,7 +8,7 @@ from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, bot
 from userbot.events import register
 
 THUMB_IMAGE_PATH = "./thumb_image.jpg"
-main = "[MAIN](https://t.me/triplenineee)"
+main = "[MAIN](https://t.me/akuabing)"
 
 @register(outgoing=True, pattern=r"^\.mmf(?: |$)(.*)")
 async def mim(event):

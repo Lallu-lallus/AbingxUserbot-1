@@ -34,7 +34,7 @@ async def get_full_user(event):
             user_obj = await event.client.get_entity(user)
         except Exception as err:
             return await event.edit(
-                "`🔐 Errors Found, Report to :` **[MAIN](https://t.me/triplenineee)** ", str(err)
+                "`🔐 Errors Found, Report to :` **[MAIN](https://t.me/akuabing)** ", str(err)
             )
     return user_obj, extra
 
@@ -113,7 +113,7 @@ async def gben(userbot):
     if user:
         if user.id in DEVS:
             return await dark.edit(
-                f"`🔐 Stoping process By` **[MAIN](https://t.me/triplenineee)** "
+                f"`🔐 Stoping process By` **[MAIN](https://t.me/akuabing)** "
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
@@ -132,7 +132,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"`🔐 Gban activated By :` **[MAIN](https://t.me/triplenineee)**")
+                await dark.edit(f"`🔐 Gban activated By :` **[MAIN](https://t.me/akuabing)**")
             except BaseException:
                 b += 1
     else:
@@ -184,7 +184,7 @@ async def gunben(userbot):
     if user:
         if user.id in DEVS:
             return await dark.edit(
-                "🔐 `Terminate Process By :` **[MAIN](https://t.me/triplenineee)**"
+                "🔐 `Terminate Process By :` **[MAIN](https://t.me/akuabing)**"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute

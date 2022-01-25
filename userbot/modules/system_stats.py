@@ -311,10 +311,10 @@ async def redis(alive):
         f"┣  `Username :` {user.username} \n"
         f"┣  `Telethon :` Ver {version.__version__} \n"
         f"┣  `Python   :` Ver {python_version()} \n"
-        f"┣  `Branch   :` **[MAIN](https://t.me/triplenineee)** \n"
+        f"┣  `Branch   :` **[MAIN](https://t.me/akuabing)** \n"
         f"┣  `Bot Ver  :` {BOT_VER} \n"
         f"┣  `Modules  :` {len(modules)} Modules \n"
-        f"┣  `GitHub   :` **[MAIN](https://www.youtube.com)** \n"
+        f"┣  `GitHub   :` **[MAIN](https://github.com/nabilrmdaan/AbingxUserbot)** \n"
         f"┣  `Support  :` **[GROUP](https://t.me/abingsupport)** \n"
         f"┣  `Owner    :` **[ABING](https://t.me/akuabing)** \n"
         f"┗━━━━━━━━━━━━━━━━━━━")

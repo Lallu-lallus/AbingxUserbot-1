@@ -74,7 +74,7 @@ async def killdabot(event):
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
-        await event.client.send_messageBOTLOG_CHATID, "#RESTARTBOT \n"
+        await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
                                         "`Userbot Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot

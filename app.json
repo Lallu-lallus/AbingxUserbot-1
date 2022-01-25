@@ -10,8 +10,8 @@
     "productivity"
   ],
   "repository": "https://github.com/Abing/AbingxUserbot",
-  "telegram": "https://t.me/triplenineee",
-  "success_url": "https://t.me/narumisupport",
+  "telegram": "https://t.me/akuabing",
+  "success_url": "https://t.me/abingsupport",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -95,7 +95,7 @@
     },
      "ALIVE_LOGO": {
       "description": "Gambar dalam module .alive",
-      "value": "https://telegra.ph/file/e0fe38bc2cf338770343c.jpg",
+      "value": "https://telegra.ph/file/a7915ed28a022aa9125a6.jpg",
       "required": false
     },
     "Nada_TEKS_KUSTOM": {

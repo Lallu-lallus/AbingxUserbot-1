@@ -15,8 +15,9 @@
 
 ## Disclaimer
 
-```
-Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
+```              
+                    🔰𝗔𝗯𝗶𝗻𝗴𝘅𝗨𝘀𝗲𝗿𝗯𝗼𝘁🔰
+tidak bertanggung jawab atas penyalahgunaan bot ini.
 Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu Anda
 mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.

@@ -386,7 +386,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🔐 **Dragon-Userbot** `Berhasil Diaktifkan`\n━━━━━━━━━━━━━━━━━━━\n🔐 **Bot of :** {ALIVE_NAME}\n🔐 **Dragon Ver. :** `7.0`\n━━━━━━━━━━━━━━━━━━━\n🔐 **Support : [HERE](https://t.me/narumisupport)**\n🔐 **Channel : [HERE](https://t.me/inibotsaya)**\n━━━━━━━━━━━━━━━━━━━")
+    await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🥶 **AbingxUserbot** `Berhasil Diaktifkan`\n━━━━━━━━━━━━━━━━━━━\n🥶 **Bot of :** {ALIVE_NAME}\n🥶 **Abing Ver. :** `7.0`\n━━━━━━━━━━━━━━━━━━━\n🥶 **Support : [HERE](https://t.me/ixurlax)**\n🥶 **Channel : [HERE](https://t.me/abingsupport)**\n━━━━━━━━━━━━━━━━━━━")
     return
 
 
@@ -471,7 +471,7 @@ with bot:
             try:
                 tgbotusername = BOT_USERNAME
                 if tgbotusername is not None:
-                    results = await event.client.inline_query(tgbotusername, "@Kyyuserrbot")
+                    results = await event.client.inline_query(tgbotusername, "@abinguserbot")
                     await results[0].click(
                         event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
                     )
@@ -506,7 +506,7 @@ with bot:
                     buttons=[
                         [
                             Button.url("SUPPORT",
-                                       "https://t.me/narumisupport")],
+                                       "https://t.me/ixurlax")],
                     ]
                 )
 
@@ -517,7 +517,7 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"{START_WELCOME}\n\n🔐 Powered By : **[KENZU](https://t.me/triplenineee)**\n\n",
+                    f"{START_WELCOME}\n\n🥶 Powered By : **[ABING](https://t.me/akuabing)**\n\n",
                     buttons=[
                         [
                             custom.Button.inline(
@@ -586,10 +586,10 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"🔐 __Saya Adalah Dragon-Userbot Yang Digunakan Banyak User Telegram__.\n\n"
-                    f"🔐 __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
-                    f"🔐 __Kelebihan Saya Banyak, Saya Mempunyai 1816 Modules__.\n\n"
-                    f"© [MAIN](https://t.me/triplenineee)")
+                    f"🥶 __Saya Adalah AbingxUserbot Yang Digunakan Banyak User Telegram__.\n\n"
+                    f"🥶 __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
+                    f"🥶 __Kelebihan Saya Banyak, Saya Mempunyai 1816 Modules__.\n\n"
+                    f"© [MAIN](https://t.me/akuabing)")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -599,7 +599,7 @@ with bot:
                     ]
                 )
             else:
-                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 7.0\n🛠 Modules : {len(plugins)}\n🔐 Branch : Dragon-Userbot"
+                reply_pop_up_alert = f"🤴 Name : {DEFAULTUSER}\n🤖 Bot Ver : 7.0\n🛠 Modules : {len(plugins)}\n🥶 Branch : AbingxUserbot"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -616,9 +616,9 @@ with bot:
                     file=kyylogo,
                     link_preview=True,
                     buttons=[
-                        [custom.Button.inline("🔐 ᴀʟɪᴠᴇ", data="alive")],
-                        [custom.Button.inline("🔐 ᴘᴍᴘᴇʀᴍɪᴛ", data="permirt")],
-                        [custom.Button.inline("🔐 ᴘᴍʙᴏᴛ", data="pmbot")],
+                        [custom.Button.inline("🥶 ᴀʟɪᴠᴇ", data="alive")],
+                        [custom.Button.inline("🥶 ᴘᴍᴘᴇʀᴍɪᴛ", data="permirt")],
+                        [custom.Button.inline("🥶 ᴘᴍʙᴏᴛ", data="pmbot")],
                         [custom.Button.inline(
                             "ɪɴʟɪɴᴇ ᴍᴏᴅᴇ ", data="inline_mode")],
                         [custom.Button.inline("ᴍᴇɴᴜ", data="kanan")],
@@ -642,10 +642,10 @@ with bot:
                     file=kyylogo,
                     link_preview=True,
                     buttons=[
-                        [custom.Button.inline("🔐 ᴜᴘᴅᴀᴛᴇ", data="pembaruan")],
-                        [custom.Button.inline("🔐 ᴘɪɴɢ", data="ping")],
-                        [custom.Button.inline("🔐 ᴄᴇᴋ ᴅʏɴᴏ", data="restart_bot")],
-                        [custom.Button.inline("🔐 <<ʟᴇꜰᴛ", data="settings")],
+                        [custom.Button.inline("🥶 ᴜᴘᴅᴀᴛᴇ", data="pembaruan")],
+                        [custom.Button.inline("🥶 ᴘɪɴɢ", data="ping")],
+                        [custom.Button.inline("🥶 ᴄᴇᴋ ᴅʏɴᴏ", data="restart_bot")],
+                        [custom.Button.inline("🥶 <<ʟᴇꜰᴛ", data="settings")],
                     ]
                 )
             else:
@@ -667,7 +667,7 @@ with bot:
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
                     f"× `.set var NADA_TEKS_KUSTOM` [**TEKS**]\n"
                     f"°__Mengganti Teks Yang Ada Command dappaAlive__.\n\n"
-                    f"© **[MAIN](https://t.me/triplenineee)**")
+                    f"© **[MAIN](https://t.me/akuabing)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -697,7 +697,7 @@ with bot:
                     f"°__Mengaktifkan Pmpermit Kalian Atau Disebut Pesan Otomatis__.\n\n"
                     f"× `.set pm_msg` [**REPLYCHAT**]\n"
                     f"°__Mengganti Teks Pmpermit Selera Kamu__.\n\n"
-                    f"© **[MAIN](https://t.me/triplenineee)**")
+                    f"© **[MAIN](https://t.me/akuabing)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -727,7 +727,7 @@ with bot:
                     f"°__Mengubah Emoji Inline Yang Ada Dicomand__ `.helpme`\n\n"
                     f"× `.set var INLINE_PIC` [**LINK**]\n"
                     f"°__Mengubah Foto Yang Ada Dicomand__ `.helpme`\n\n"
-                    f"© https://t.me/triplenineee")
+                    f"© https://t.me/akuabing")
                 await event.edit(
                     text,
                     file=kyulogo,
@@ -755,7 +755,7 @@ with bot:
                     f"Modules Name **pmbot**\n\n"
                     f"× `.set var START_WELCOME` [**TEKS**] \n"
                     f"°__Kamu Juga Bisa Mengubah Start Welcome Untuk Bot Kamu Yang Ini, Dengan Cara Diatas Dan Kata Kata Bebas__.\n\n"
-                    f"© **[MAIN](https://t.me/triplenineee)**")
+                    f"© **[MAIN](https://t.me/akuabing)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -781,11 +781,11 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Pembaruan**\n\n"
-                    f"× **Pembaruan Data Untuk Dragon-Userbot, Command Untuk Pembaruan**.\n"
+                    f"× **Pembaruan Data Untuk AbingxUserbot, Command Untuk Pembaruan**.\n"
                     f"⚒Pembaruan Data :\n"
                     f"`.update deploy`\n"
                     f"`update`\n\n"
-                    f"© **[MAIN](https://t.me/triplenineee)**")
+                    f"© **[MAIN](https://t.me/akuabing)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -839,7 +839,7 @@ with bot:
                 AppPercentage = math.floor(
                     apps.get('quota_used') * 100 / quota)
                 text = (
-                    "🔐 **ɪɴꜰᴏʀᴍᴀsɪ ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ :**\n"
+                    "🥶 **ɪɴꜰᴏʀᴍᴀsɪ ᴅʏɴᴏ ʜᴇʀᴏᴋᴜ :**\n"
                     "╔════════════════════╗\n"
                     f" ☂ **ᴘᴇɴɢɢᴜɴᴀ ᴅʏɴᴏ sᴀᴀᴛ ɪɴɪ :**\n"
                     f"  ➽  `{AppHours}`**ᴊᴀᴍ**  `{AppMinutes}`**ᴍᴇɴɪᴛ**  "
@@ -850,7 +850,7 @@ with bot:
                     f"**|**  [`{percentage}`**%**]\n"
                     f" ✠➲ **ʙᴏᴛ ᴏꜰ :** {ALIVE_NAME}  "
                     "\n╚════════════════════╝"
-                    f"© **[MAIN](https://t.me/triplenineee)**")
+                    f"© **[MAIN](https://t.me/akuabing)**")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -873,7 +873,7 @@ with bot:
         async def killdabot(event):
             if event.query.user_id == uid:
                 text = (
-                    f"**🔐 Restaring Dragon-Userbot**...")
+                    f"**🥶 Restaring AbingxUserbot**...")
                 await event.edit(
                     text,
                     file=kyylogo,
@@ -900,8 +900,8 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url("🔐 GROUP",
-                                       "**[MAIN](https://t.me/narumisupport)**")],
+                            Button.url("🥶 GROUP",
+                                       "**[MAIN](https://t.me/ixurlax)**")],
                     ]
                 )
 
@@ -923,23 +923,23 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari 🔐 DRAGON-USERBOT",
+                    "Bantuan Dari 🥶 ABINGXUSERBOT",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " 🔐 DRAGON-USERBOT",
-                    text="""°🔐 DRAGON-USERBOT°""",
+                    " 🥶 ABINGXUSERBOT",
+                    text="""°🥶 ABINGXUSERBOT°""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "🔐 DRAGON",
+                                "🥶 ABING",
                                 "https://www.xxxnxxx"),
 
                             custom.Button.url(
-                                "🔐 GROUP",
-                                "t.me/narumisupport")],
+                                "🥶 GROUP",
+                                "t.me/ixurlax")],
                         [custom.Button.url(
                             "License",
                             "https://www.xxxnxxx")],
@@ -978,10 +978,10 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url("🔐 ꜱᴜᴘᴘᴏʀᴛ",
-                                       "t.me/narumisupport"),
-                            Button.url("🔐 ᴄʜᴀɴɴᴇʟ",
-                                       "t.me/inibotsaya")],
+                            Button.url("🥶 ꜱᴜᴘᴘᴏʀᴛ",
+                                       "t.me/ixurlax"),
+                            Button.url("🥶 ᴄʜᴀɴɴᴇʟ",
+                                       "t.me/abingsupport")],
                         [custom.Button.inline(
                             "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
                         [custom.Button.inline(
